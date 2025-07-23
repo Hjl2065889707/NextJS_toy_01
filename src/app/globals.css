@@ -25,6 +25,9 @@ a {
   justify-content: space-between;
 }
 
+.theme {
+  transition: all 1s ease;
+}
 .light {
   background-color: white;
   color: #111;
