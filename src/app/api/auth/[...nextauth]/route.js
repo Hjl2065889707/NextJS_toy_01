@@ -9,6 +9,9 @@ const handler = NextAuth({
     }),
   ],
   secret: process.env.NEXTAUTH_SECRET,
+  session: {
+    maxAge: 3 * 24 * 60 * 60, 
+  },
 });
 
 export { handler as GET, handler as POST };
