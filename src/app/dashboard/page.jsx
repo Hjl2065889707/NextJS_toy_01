@@ -82,9 +82,9 @@ const Dashboard = () => {
         </div>
         <form className={styles.new} onSubmit={handleSubmit}>
           <h1>Add New Post</h1>
-          <input type="text" name="title" placeholder="Title" className={styles.input} />
-          <input type="text" name="desc" placeholder="Description" className={styles.input} />
-          <input type="text" name="img" placeholder="Image" className={styles.input} />
+          <input type="text" name="title" placeholder="Title" className={styles.input} required/>
+          <input type="text" name="desc" placeholder="Description" className={styles.input} required/>
+          <input type="url" name="img" placeholder="Image" className={styles.input} required/>
           <textarea
             name="content"
             placeholder="Content"
